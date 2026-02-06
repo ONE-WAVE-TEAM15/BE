@@ -1,3 +1,4 @@
+from datetime import date
 from typing import Optional
 
 from pydantic import BaseModel, EmailStr
@@ -18,6 +19,21 @@ class UserLogin(BaseModel):
 class SurveyCreate(BaseModel):
     domain: str
     text: str
+
+
+class PortfolioCreate(BaseModel):
+    # User profile fields
+    self_summary: Optional[str] = None
+    user_skills: Optional[str] = None
+    external_links: Optional[str] = None
+
+    # Project fields
+    title: str
+    start_date: Optional[date] = None
+    end_date: Optional[date] = None
+    content: Optional[str] = None
+    skills_used: Optional[str] = None
+    results: Optional[str] = None
 
 
 class UserResponse(BaseModel):

@@ -1,6 +1,6 @@
 from app.schemas.job import JobCreate, JobResponse, JobUpdate
 from app.schemas.project import ProjectCreate, ProjectResponse, ProjectUpdate
-from app.schemas.user import SurveyCreate, UserCreate, UserLogin, UserResponse
+from app.schemas.user import SurveyCreate, UserCreate, UserLogin, UserResponse, PortfolioCreate
 
 __all__ = [
     "UserCreate",
@@ -13,4 +13,5 @@ __all__ = [
     "JobCreate",
     "JobUpdate",
     "JobResponse",
+    "PortfolioCreate"
 ]

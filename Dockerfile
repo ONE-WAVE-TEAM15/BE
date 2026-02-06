@@ -2,7 +2,7 @@ FROM python:3.11-slim
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 WORKDIR /app
-COPY pyproject.toml .
+COPY pyproject.toml uv.lock README.md ./
 # 의존성 먼저 설치 (캐싱 활용)
 RUN uv pip install --system -r pyproject.toml
 
