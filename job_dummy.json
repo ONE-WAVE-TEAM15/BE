@@ -1,7 +1,0 @@
-{
-  "company": "퓨처 테크 솔루션",
-  "title": "클라우드 네이티브 백엔드 엔지니어",
-  "description": "차세대 클라우드 플랫폼을 구축하는 업무를 담당합니다. MSA 환경에서의 서비스 개발 및 운영 경험이 필요하며, 대규모 트래픽 처리를 위한 아키텍처 설계 역량을 우대합니다. 팀원 간의 코드 리뷰와 기술 공유를 중요하게 생각하는 문화입니다.",
-  "domain": "BE",
-  "skills_required": "Java, Spring Boot, AWS, Docker, Kubernetes, Redis, Kafka"
-}
