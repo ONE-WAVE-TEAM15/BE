@@ -13,7 +13,8 @@ router = APIRouter(prefix="/auth", tags=["Auth"])
 def signup(user_in: UserCreate, session: Session = Depends(get_session)):
     user = User(
         email=user_in.email,
-        username=user_in.username,
+        name=user_in.name,
+        phone_number=user_in.phone_number,
         hashed_password=hash_password(user_in.password),
     )
     session.add(user)
