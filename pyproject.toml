@@ -1,0 +1,17 @@
+[project]
+name = "onewave-be"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]",
+    "sqlmodel",
+    "psycopg2-binary",
+    "python-jose[cryptography]",
+    "passlib[bcrypt]",
+    "bcrypt>=4.0.1,<5.0.0",
+    "python-multipart",
+    "email-validator",
+    "python-dotenv",
+]
