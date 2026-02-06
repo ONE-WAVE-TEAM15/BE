@@ -22,12 +22,10 @@ class SurveyCreate(BaseModel):
 
 
 class PortfolioCreate(BaseModel):
-    # User profile fields
     self_summary: Optional[str] = None
     user_skills: Optional[str] = None
     external_links: Optional[str] = None
 
-    # Project fields
     title: str
     start_date: Optional[date] = None
     end_date: Optional[date] = None
