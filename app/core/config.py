@@ -11,3 +11,8 @@ DATABASE_URL = os.getenv(
     "DATABASE_URL",
     "postgresql://onewave:onewave@localhost:5432/onewave"
 )
+
+# AI/ML Service Configuration
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GOOGLE_APPLICATION_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS", "")
+TTS_VOICE_NAME = os.getenv("TTS_VOICE_NAME", "ko-KR-Wavenet-A")

@@ -15,3 +15,6 @@ wheels/
 
 # Database
 postgres_data/
+
+secrets/
+*.json

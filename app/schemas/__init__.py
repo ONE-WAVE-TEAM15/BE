@@ -1,3 +1,12 @@
+from app.schemas.interview import (
+    ConversationMessage,
+    InterviewerChatRequest,
+    InterviewerChatResponse,
+    InterviewStartResponse,
+    MentorChatRequest,
+    MentorChatResponse,
+    ProjectInfo,
+)
 from app.schemas.job import JobCreate, JobResponse, JobUpdate
 from app.schemas.project import ProjectCreate, ProjectResponse, ProjectUpdate
 from app.schemas.user import SurveyCreate, UserCreate, UserLogin, UserResponse, PortfolioCreate
@@ -13,5 +22,12 @@ __all__ = [
     "JobCreate",
     "JobUpdate",
     "JobResponse",
-    "PortfolioCreate"
+    "PortfolioCreate",
+    "ConversationMessage",
+    "InterviewerChatRequest",
+    "InterviewerChatResponse",
+    "InterviewStartResponse",
+    "MentorChatRequest",
+    "MentorChatResponse",
+    "ProjectInfo",
 ]
