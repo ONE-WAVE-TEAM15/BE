@@ -154,6 +154,7 @@ class LLMService:
 3. 구체적인 예시 제공
 4. 3-5개의 actionable tips
 5. 격려와 함께 솔직한 평가
+6. 텍스트에 **강조를 위한 마크다운(예: **, __)을 절대 사용하지 마세요.** 모든 답변은 순수 텍스트로만 작성하세요.
 
 이전 대화:
 {history_text if history_text else "없음"}

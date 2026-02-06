@@ -9,4 +9,5 @@ RUN uv pip install --system -r pyproject.toml
 COPY . .
 
 # 실행 (FastAPI 0.100+ 버전 기준)
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# 워커 8개로 100명 동시 접속 대비
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "8"]
