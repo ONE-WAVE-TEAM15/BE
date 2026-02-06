@@ -29,3 +29,7 @@ class JobResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class JobsResponse(BaseModel):
+    jobs: list[JobResponse]
