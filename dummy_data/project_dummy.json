@@ -1,5 +1,5 @@
 {
   "title": "게시판 웹 서비스 프로젝트",
-  "content": "Spring Boot와 JPA를 사용한 기본적인 CRUD 게시판입니다. RESTful API 설계 및 DB 정규화를 적용했습니다.",
+  "content": "Spring Boot와 JPA를 사용한 기본적인 CRUD 게시판입니다. RESTful API 설계 및 DB 정규화를 적용했습니다. 실시간 처리 위해 kafka를 도입했습니다.",
   "skills_used": "Java, Spring Boot, JPA, MySQL"
 }

@@ -8,7 +8,7 @@ load_dotenv()
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-def analyze_portfolio(user_data: dict, project_data: dict, job_data: dict) -> str:
+def analyze_portfolio(user_data: dict, project_data: dict, job_data: dict) -> dict:
     if not GEMINI_API_KEY:
         return "Gemini API Key is missing."
 

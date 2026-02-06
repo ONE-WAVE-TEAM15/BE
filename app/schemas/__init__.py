@@ -1,3 +1,4 @@
+from app.schemas.analysis import PortfolioAnalysisResponse, RecommendedProgram
 from app.schemas.interview import (
     ConversationMessage,
     InterviewerChatRequest,
@@ -30,4 +31,6 @@ __all__ = [
     "MentorChatRequest",
     "MentorChatResponse",
     "ProjectInfo",
+    "PortfolioAnalysisResponse",
+    "RecommendedProgram",
 ]
