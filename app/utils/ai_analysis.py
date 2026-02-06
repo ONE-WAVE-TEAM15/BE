@@ -21,11 +21,11 @@ def analyze_portfolio(user_data: dict, project_data: dict, job_data: dict) -> st
 
     client = Client(api_key=GEMINI_API_KEY)
 
-    # Load programs from program_dummy.json
+    # Load programs from dummy_data/program_dummy.json
     programs = []
     try:
         base_path = Path(__file__).resolve().parent.parent.parent
-        json_path = base_path / "program_dummy.json"
+        json_path = base_path / "dummy_data" / "program_dummy.json"
         
         if json_path.exists():
             with open(json_path, "r", encoding="utf-8") as f:
